@@ -1,7 +1,7 @@
 # Points tranformation
 
 
-Visual representation of algorithm in Javascript
+Visual representation of these algorithm below in Javascript
 * Bresenham's line
 * Translation
 * Scale
