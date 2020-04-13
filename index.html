@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="main.css"rel="stylesheet"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="bresenhamInputs">
+        <input id="matrix-size" class="input-entry" type="number" placeholder="Matriz">
+        <input class="material-button" type="button" name="myButton" value="Gerar Tabela" onclick="generateTable()" />
+        <input class="material-button" type="button" name="bresenham" value="Aplicar Algoritmo Bresenham" onclick="drawsBresenhamsLine()" />
+        <input class="material-button" type="button" name="reset" value="Limpar" onclick="reset()"/>
+    </div>
+
+    <div class="triangleInputs">
+        <input id="drawTriangle" class="material-button triangle" type="button" name="drawTriangle" value="Desenhar triangulo" onclick="drawTriangle()" />
+    
+        <input id="scale-multiplier" class="input-entry" type="number" placeholder="Scale">
+        <input id="drawTriangle" class="material-button triangle" type="button" name="drawTriangle" value="Escalar" onclick="scale()" />
+    
+        <input id="translateX" class="input-entry" type="number" placeholder="translateX">
+        <input id="drawTriangle" class="material-button triangle" type="button" name="drawTriangle" value="Tranlação X" onclick="translateX()" />
+        <input id="translateY" class="input-entry" type="number" placeholder="translateY">
+        <input id="drawTriangle" class="material-button triangle" type="button" name="drawTriangle" value="Translação Y" onclick="translateY()" />
+        
+
+        <input id="rotateAngle" class="input-entry" type="number" placeholder="Angle">
+        <input id="drawTriangle" class="material-button triangle" type="button" name="drawTriangle" value="Rotação" onclick="rotated()" />
+        
+    </div>
+
+    <div class="eulerInputs">
+        <input id="x" class="input-entry" type="number" placeholder="x">
+        <input id="y" class="input-entry" type="number" placeholder="y">
+        <input id="z" class="input-entry" type="number" placeholder="z">
+        <input id="eulerAngle" class="input-entry" type="number" placeholder="angle">
+        <input id="drawTriangle" class="material-button triangle" type="button" name="Euler" value="Euler" onclick="drawEuler()" />
+    </div>
+
+    <div id="bresenham-matrix">
+    </div>
+
+    <div class="euler">
+    </div>
+</body>
+</html>
